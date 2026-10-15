@@ -19,7 +19,7 @@ while True:
     elif action.lower() == 'b':
         key = input('Enter a key:')
         if key in information:
-            information[key] = None
+            information.pop(information[key])
             print(information)
 
     elif action.lower() == 'c':
